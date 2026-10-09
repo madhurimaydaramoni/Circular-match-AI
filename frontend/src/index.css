@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background: #f5f7f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(45, 125, 98, 0.15), transparent 30%),
+    #f5f7f2;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.card {
+  @apply rounded-2xl border border-emerald-100 bg-white/90 shadow-sm;
+}
+
+.label {
+  @apply mb-2 block text-sm font-medium text-slate-700;
+}
+
+.field {
+  @apply w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-slate-900 outline-none transition focus:border-emerald-500 focus:bg-white;
+}
+
+.primary-btn {
+  @apply inline-flex items-center justify-center rounded-xl bg-emerald-700 px-4 py-2.5 font-medium text-white shadow-sm transition hover:bg-emerald-800;
+}
+
+.secondary-btn {
+  @apply inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2.5 font-medium text-slate-700 transition hover:border-emerald-300 hover:text-emerald-700;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700;
+}
+
